@@ -1,0 +1,237 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	max-width: auto;
+	
+}
+html{
+	background-color: black;
+	color: #C9A9A6;
+	font-family: arial;
+	font-weight: bold;
+	font-size: auto;
+	text-rendering: optimizeLegibility;
+	max-width: 100%;
+}
+body{
+	min-height: 100vh;
+	margin: 0 0;
+}
+.row{
+	max-width: 140px;
+	margin: 0 40px;
+}
+.table{
+	display: table;
+	margin: 0 auto;
+	width: 100%;
+
+}
+section{
+	padding: 30px 0;
+}
+h1{
+	text-align: center;
+	text-transform: uppercase;
+	font-family: lato;
+	padding-top: 80px;
+}
+a{
+	color: #C9A9A6;
+	margin-left: 5px;
+	border-width: 4px;
+	font-weight: 100;
+	font-size: 18px;
+	
+}
+.main-nav {
+	min-width: 700px;
+	list-style: none;
+	padding-top: 10px;
+	text-transform: uppercase;
+
+}
+.main-nav li{
+	text-decoration: none;
+	display: inline;
+	border-top: 1px solid #C9A9A6;
+  	border-right: 2px solid #C9A9A6;
+  	border-bottom: 1px solid #C9A9A6;
+  	border-left: 2px solid #C9A9A6;
+  	border-radius: 100px;
+  	border-color: transparent;
+  	border-style: solid;
+  	position: relative;
+  	left: 300px;
+
+}
+.main-nav li:hover{
+	border-bottom: 5px solid #C9A9A6;
+	transition: border-bottom .3s;
+	
+}
+a:hover{
+	font-weight: bold;
+	transition: font-weight 0.3s;
+}
+.headshot{
+	display: block;
+ 	 margin-left: auto;
+ 	 margin-right: auto;
+ 	 width: 60%;
+ 	 text-align: center;
+ 	 margin-top: 40px;
+ 	 max-width: 100%;
+ 	 max-height: 100%;
+ 	 display: block;
+}
+.img{
+	width: 400px;
+	border: 5px solid black;
+	position: relative;
+	left: 500px;
+
+}
+.Autobiography{
+	width: 90%;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 1px;
+}
+.section-photo{
+	margin-top: 0px;
+	padding-top: 3px;
+	transform-style: preserve-3d;
+	transition: all 1.0s linear;
+	text-align: center;
+}
+.me{
+	float: left;
+	width: 400px;
+	height: 300px;
+	object-fit: cover;
+	transform: scale(1.10);
+	transition: transform 0.5s,opacity 0.5s;
+	opacity: 0.7;
+	overflow: hidden;
+	background-color: white;
+}
+.showcase{
+	list-style: none;
+	width: 100%;
+	
+}
+.showcase li{
+	display: block;
+	
+}
+.me-photo{
+	width: 100%;
+}
+.me-photo li{
+	width: 100%;
+	height: auto;
+	background-color: white;
+}
+.me:hover{
+	transform: scale(1.03);
+	opacity: 1;
+	transform-style: preserve-3d;
+	transform: rotateY(180deg);
+	transition: transform 1s;
+	backface-visibility: hidden;
+}
+.Info{
+	position: relative;
+}
+.linkedin{
+	position: relative;
+	left: 100px;
+	top: 100px;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 50%;
+}
+.games{
+	float: center;
+  	width: 50%;
+  	padding: 5px;
+}
+.both:after{
+	content: "";
+  	clear: both;
+  	display: table;
+}
+.online{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	left: 100px;
+	top: 20px;
+	opacity: 0.5;
+}
+.mobile{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	float: right;
+	left: 400px;
+	top: 20px;
+	opacity: 0.5;	
+}
+.online:hover, .mobile:hover{
+	opacity: 1;
+	transition: opacity 0.3s;
+}
+.wrapper{
+	margin: 10% auto;
+	width: 400px;
+}
+.anime{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	padding-bottom: 1px;
+}
+label{
+	display: block;
+	cursor: pointer;
+	padding: 10px;
+	border: 1px solid #FFFFF0;	
+}
+
+label:hover{
+	color: mistyrose;
+}
+label.last{
+	border-bottom: 1px solid #FFFFF0;
+}
+ul.anime li{
+	padding: 2px 2px;
+}
+
+input[type="checkbox"]{
+  position: absolute;
+  left: -9999px;
+}
+
+input[type="checkbox"] ~ ul{
+  height: 0;
+  transform: scaleY(0);
+  padding-top: 10px;
+}
+
+input[type="checkbox"]:checked ~ ul{
+  height: 100%;
+  transform-origin: top;
+  transition: transform .2s ease-out;
+  transform: scaleY(1); 
+}
+
+input[type="checkbox"]:checked + label{
+  background: #FFFFF0;
+  border-bottom: 1px solid #FFFFF0;
+}
